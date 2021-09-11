@@ -1,43 +1,116 @@
 {
-  "name": "res_app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^3.17.3",
-    "register-service-worker": "^1.7.2",
-    "vue": "^3.2.11",
-    "vue-router": "^4.0.11",
-    "vuex": "^4.0.2"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.9.1",
-    "@typescript-eslint/eslint-plugin": "^4.31.0",
-    "@typescript-eslint/parser": "^4.31.0",
-    "@vue/cli-plugin-babel": "^4.5.13",
-    "@vue/cli-plugin-e2e-cypress": "^4.5.13",
-    "@vue/cli-plugin-eslint": "^4.5.13",
-    "@vue/cli-plugin-pwa": "^4.5.13",
-    "@vue/cli-plugin-router": "^4.5.13",
-    "@vue/cli-plugin-typescript": "^4.5.13",
-    "@vue/cli-plugin-unit-jest": "^4.5.13",
-    "@vue/cli-plugin-vuex": "^4.5.13",
-    "@vue/cli-service": "^4.5.13",
-    "@vue/compiler-sfc": "^3.2.11",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "@vue/test-utils": "^2.0.0-rc.14",
-    "eslint": "^6.8.0",
-    "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-vue": "^7.17.0",
-    "prettier": "^2.4.0",
-    "typescript": "^4.3.5",
-    "vue-jest": "^5.0.0-alpha.10"
-  }
+    "name": "vue_example_app",
+    "version": "0.1.0",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "test:unit": "vue-cli-service test:unit",
+        "test:e2e": "vue-cli-service test:e2e",
+        "lint": "vue-cli-service lint",
+        "prettier": "prettier --check --plugin-search-dir=. .",
+        "prettier:fix": "prettier --write --plugin-search-dir=. ."
+    },
+    "dependencies": {
+        "core-js": "^3.17.3",
+        "register-service-worker": "^1.7.2",
+        "vue": "^3.2.11",
+        "vue-router": "^4.0.11",
+        "vuex": "^4.0.2"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^13.1.0",
+        "@commitlint/config-conventional": "^13.1.0",
+        "@types/jest": "^24.9.1",
+        "@typescript-eslint/eslint-plugin": "^4.31.0",
+        "@typescript-eslint/parser": "^4.31.0",
+        "@vue/cli-plugin-babel": "^4.5.13",
+        "@vue/cli-plugin-e2e-cypress": "^4.5.13",
+        "@vue/cli-plugin-eslint": "^4.5.13",
+        "@vue/cli-plugin-pwa": "^4.5.13",
+        "@vue/cli-plugin-router": "^4.5.13",
+        "@vue/cli-plugin-typescript": "^4.5.13",
+        "@vue/cli-plugin-unit-jest": "^4.5.13",
+        "@vue/cli-plugin-vuex": "^4.5.13",
+        "@vue/cli-service": "^4.5.13",
+        "@vue/compiler-sfc": "^3.2.11",
+        "@vue/eslint-config-prettier": "^6.0.0",
+        "@vue/eslint-config-typescript": "^7.0.0",
+        "@vue/test-utils": "^2.0.0-rc.14",
+        "autoprefixer": "^10.3.4",
+        "commitizen": "^4.2.4",
+        "eslint": "^6.8.0",
+        "eslint-plugin-cypress": "^2.11.3",
+        "eslint-plugin-jest": "^24.4.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "eslint-plugin-vue": "^7.17.0",
+        "prettier": "^2.4.0",
+        "standard-changelog": "^2.0.27",
+        "standard-version": "^9.3.1",
+        "typescript": "^4.3.5",
+        "vue-jest": "^5.0.0-alpha.10"
+    },
+    "standard-version": {
+        "types": [
+            {
+                "type": "chore",
+                "section": "Others (chore)",
+                "hidden": false
+            },
+            {
+                "type": "revert",
+                "section": "Reverts",
+                "hidden": false
+            },
+            {
+                "type": "feat",
+                "section": "Features",
+                "hidden": false
+            },
+            {
+                "type": "fix",
+                "section": "Bug Fixes",
+                "hidden": false
+            },
+            {
+                "type": "improvement",
+                "section": "Feature Improvements",
+                "hidden": false
+            },
+            {
+                "type": "docs",
+                "section": "Docs",
+                "hidden": false
+            },
+            {
+                "type": "style",
+                "section": "Styling",
+                "hidden": false
+            },
+            {
+                "type": "refactor",
+                "section": "Code Refactoring",
+                "hidden": false
+            },
+            {
+                "type": "perf",
+                "section": "Performance Improvements",
+                "hidden": false
+            },
+            {
+                "type": "test",
+                "section": "Tests",
+                "hidden": false
+            },
+            {
+                "type": "build",
+                "section": "Build System",
+                "hidden": false
+            },
+            {
+                "type": "ci",
+                "section": "CI",
+                "hidden": false
+            }
+        ]
+    }
 }
