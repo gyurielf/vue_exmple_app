@@ -39,6 +39,8 @@
         "autoprefixer": "^10.3.4",
         "commitizen": "^4.2.4",
         "eslint": "^6.8.0",
+        "eslint-plugin-cypress": "^2.11.3",
+        "eslint-plugin-jest": "^24.4.0",
         "eslint-plugin-prettier": "^3.4.1",
         "eslint-plugin-vue": "^7.17.0",
         "prettier": "^2.4.0",
@@ -110,6 +112,5 @@
                 "hidden": false
             }
         ]
-    },
-    "type": "module"
+    }
 }
