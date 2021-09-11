@@ -1,6 +1,6 @@
 {
     "name": "vue_example_app",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
@@ -8,7 +8,8 @@
         "test:e2e": "vue-cli-service test:e2e",
         "lint": "vue-cli-service lint",
         "prettier": "prettier --check --plugin-search-dir=. .",
-        "prettier:fix": "prettier --write --plugin-search-dir=. ."
+        "prettier:fix": "prettier --write --plugin-search-dir=. .",
+        "release": "standard-version --no-verify"
     },
     "dependencies": {
         "core-js": "^3.17.3",
